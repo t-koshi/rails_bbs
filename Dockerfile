@@ -36,7 +36,7 @@ RUN npm install -g yarn
 RUN gem install bundler
 RUN gem update
 
-ENV APP_HOME /rails_demo
+ENV APP_HOME /rails_bbs
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
