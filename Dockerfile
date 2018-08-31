@@ -14,8 +14,8 @@ RUN apk upgrade && \
     less \
     libxml2-dev \
     libxslt-dev \
-    mysql-client \
-    mysql-dev \
+    postgresql-dev \
+    postgresql \
     nodejs \
     openssl \
     readline \

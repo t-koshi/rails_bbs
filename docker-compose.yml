@@ -7,6 +7,8 @@ services:
   web:
     build: .
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec foreman start"
+    links:
+      - db
     volumes:
       - .:/rails_bbs
       - bundle:/bundle
