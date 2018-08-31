@@ -1,16 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Content:</strong>
   <% if current_user.avatar.attached? %>
     <%= image_tag url_for(current_user.avatar), width: "200px" %>
   <% end %>
 </p>
 
 <p>
-  <strong>Content:</strong>
+  <strong>名前:</strong>
   <%= current_user.name %>
 </p>
 
-<%= link_to 'Edit', edit_me_profile_path %> |
-<%= link_to 'Back', root_path %>
+<%= link_to 'プロフィール編集', edit_me_profile_path %> |
+<%= link_to 'トップページ', root_path %>
